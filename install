@@ -73,6 +73,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
   echo 'here'
   require_one_installed gconftool gsettings
   require_installed nvim
+  require_installed alacritty
   require_installed xclip
 
 # OSX specific checks
