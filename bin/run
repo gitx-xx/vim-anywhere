@@ -58,6 +58,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
   alacritty --title nvim  -e $SHELL -lc "nvim ${TMPFILE}"
   wait
   cat $TMPFILE | xclip -selection clipboard
+  xdotool key --clearmodifiers ctrl+v
 
 # OSX
 elif [[ $OSTYPE == "darwin"* ]]; then

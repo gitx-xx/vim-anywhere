@@ -75,6 +75,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
   require_installed nvim
   require_installed alacritty
   require_installed xclip
+  require_installed xdotool
 
 # OSX specific checks
 elif [[ $OSTYPE == "darwin"* ]]; then
