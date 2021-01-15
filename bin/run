@@ -55,7 +55,7 @@ touch $TMPFILE
 # Linux
 if [[ $OSTYPE == "linux-gnu" ]]; then
   chmod o-r $TMPFILE # Make file only readable by you
-  nvim $TMPFILE
+  gtk-launch nvim $TMPFILE
   cat $TMPFILE | xclip -selection clipboard
 
 # OSX
