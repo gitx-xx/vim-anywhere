@@ -38,7 +38,7 @@ done
 AW_PATH=$HOME/.vim-anywhere
 TMPFILE_DIR=/tmp/vim-anywhere
 TMPFILE=$TMPFILE_DIR/doc-$(date +"%y%m%d%H%M%S")
-VIM_OPTS=--nofork
+VIM_OPTS=
 
 # Use nvim config if exists
 VIMRC_PATH=($HOME/.config/init.vim)
