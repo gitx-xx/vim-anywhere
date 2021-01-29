@@ -55,7 +55,7 @@ touch $TMPFILE
 # Linux
 if [[ $OSTYPE == "linux-gnu" ]]; then
   chmod o-r $TMPFILE # Make file only readable by you
-  alacritty --config-file "${HOME}/.config/alacritty/alacritty.yml" --title "nvim"  -e $SHELL -lc "nvr -s ${TMPFILE}"
+  alacritty --config-file "${HOME}/.config/alacritty/alacritty.yml" --title "nvim"  -e $SHELL -lc "nvr -c 'startinsert' -s ${TMPFILE}"
   wait
   cat $TMPFILE | xclip -selection clipboard
   xdotool key --clearmodifiers ctrl+v
